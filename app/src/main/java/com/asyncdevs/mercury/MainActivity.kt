@@ -54,13 +54,17 @@ class MainActivity : AppCompatActivity() {
             Log.i("SRI1711",index.toString())
 
             if(index == 0){
-                findViewById<TextView>(R.id.tv_result).text = "Meningioma"
+                findViewById<TextView>(R.id.tv_result).text = "Meningioma \n" +
+                        "A usually non-cancerous tumour that arises from the membranes surrounding the brain and spinal cord. In most cases, the condition is non-cancerous."
             }
             else if(index == 1){
-                findViewById<TextView>(R.id.tv_result).text = "Glioma"
+                findViewById<TextView>(R.id.tv_result).text = "Glioma \n" +
+                        " SYMPTOMS : headaches, seizures, irritability, vomiting, visual difficulties and weakness or numbness of the extremities."
             }
             else if(index == 2){
-                findViewById<TextView>(R.id.tv_result).text = "Pitutary"
+                findViewById<TextView>(R.id.tv_result).text = "Pitutary\n" +
+                        "Non-cancerous tumours in the pituitary gland that don't spread beyond the skull.\n" +
+                        "The pituitary gland is in the skull, below the brain and above the nasal passages. A large tumour can press upon and damage the brain and nerves."
             }
             model.close()
         }
